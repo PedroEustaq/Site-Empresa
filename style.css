@@ -1,0 +1,335 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+body {
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgba(26,26,26,255);
+    color: white;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+div#Lado1 > h1 > span{
+    color: rgb(32, 140, 255);
+    text-shadow: 0px 0px 5px rgb(0, 103, 213);
+}
+div#Logo > img{
+    width: 80px;
+}
+div#Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+header {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+}
+header > section {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    background-color: none;
+    justify-content: space-between;
+    align-items: center;
+}
+header > section > button {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(26,26,26,255);
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+}
+main#part1 {
+    background-color: none;
+    width: 80%;
+    background-color: none;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+main#part1 >div > h1 {
+    font-size: 70px;
+    background-color: none;
+    width: 80%;
+    margin-left: 0px;
+    line-height: 1.1;
+}
+main#part1 >div> h2 {
+    margin-top: 20px;
+    font-weight: 300;
+}
+main#part1 >div> button {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(0, 100, 207);
+    padding: 10px;
+    font-weight: 500;
+    border: 2px solid blue;
+    border-radius: 30px;
+}
+div#img {
+    background-color: none;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 1000px;
+    justify-content: space-between;
+    background-color: none;
+    background-color: none;
+}
+div#img > img {
+    width: 50%;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+div#img > div {
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+div#img > div > img {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+main#SobNOS {
+    width: 90%;
+    height: 700px;
+    background-color: none;
+}
+main#SobNOS > div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main#SobNOS > div > h1 {
+    font-size: 50px;
+}
+main#SobNOS > div > h2 {
+    font-weight: 300;
+    background-color: none;
+    width: 50%;
+    text-align: center;
+}
+section#DesvSoft {
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+section#DesvSoft > h1 {
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+section#DesvSoftB {
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 56, 167);
+}
+section#DesvSoftB > h1 {
+    border-bottom: 1px solid rgb(0, 56, 167);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+section#DesvSoftC {
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(210, 144, 0);
+}
+section#DesvSoftC > h1 {
+    border-bottom: 1px solid rgb(210, 144, 0);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+section#DesvSoftD {
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 175, 177);
+}
+section#DesvSoftD > h1 {
+    border-bottom: 1px solid rgb(0, 175, 177);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+section#Aplica {
+    background-color: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+main#Depoi {
+    display: flex;
+    justify-content: space-around;
+    background-color: none;
+    width: 90%;
+    align-items: center;
+    margin-bottom: 80px;
+}
+div#DepFull {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 10px 30px rgba(0, 0, 0, 0.101);
+    width: 40%;
+}
+div#Pessoa {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 0.5px solid white;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+div#Pessoa > h2 {
+    font-size: 23px;
+}
+div#Pessoa > img {
+    width: 12%;
+}
+div#DepFull > p {
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.884);
+    font-weight: 500;
+    font-style: italic;
+}
+div#imgDepo {
+    width: 40%;
+}
+div#imgDepo > img {
+    width: 100%;
+}
+main#ProntoPara {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: space-around;
+}
+div#cor {
+    background-color: rgb(0, 100, 207);
+    width: 55%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+div#cor > h1 {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.66);
+    font-weight: 400;
+}
+div#cor > h1 > span {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.541);
+}
+section#PulandoHom {
+    background-color: rgba(255, 255, 255, 0.647);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+section#PulandoHom > img {
+    width: 400px;
+    margin-bottom: 110px;
+}
+div#Pronto {
+    padding: 20px;
+    width: 40%;
+    height: 80%;
+    background-color: rgb(0, 56, 167);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+
+}
+div#Pronto >button {
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    background-color: rgb(0, 100, 207);
+    border: 0px solid white;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    width: 200px;
+}
+div#Pronto > img {
+    position: absolute;
+    top: 110px;
+    right: -120px;
+    width: 60%;
+}
+div#Redes > img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+}
+footer  {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: start;
+    background-color: rgba(0, 0, 0, 0.423);
+    width: 100%;
+    margin-top: 20px;
+}
+footer > div#partEsquerd {
+    background-color: none;
+    display: flex;
+    height: 250px;
+    margin-left: 20px;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: start;
+}
+div#Redes {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 255, 0);
+    width: 50%;
+    margin-left: 20px;
+}
