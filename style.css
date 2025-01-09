@@ -18,6 +18,35 @@ div#Lado1 > h1 > span{
     color: rgb(32, 140, 255);
     text-shadow: 0px 0px 5px rgb(0, 103, 213);
 }
+div#Lado1 > h1 {
+    animation-name: paraOLado;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+div#Lado1 > h2 {
+    opacity: 0;
+    animation-name: ApareceFotos;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+div#Lado1 > button {
+    opacity: 0;
+    animation-name: ApareceFotos;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
 div#Logo > img{
     width: 80px;
 }
@@ -44,14 +73,55 @@ header > section {
     justify-content: space-between;
     align-items: center;
 }
+header > section > ul {
+    opacity: 0;
+    transition: color 0.2s ease-out;
+    animation-name: descerTopo;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+header > section > ul:hover {
+    cursor: pointer;
+   color: rgb(37, 142, 255); 
+}
+header > section > ul:nth-child(2) {
+    animation-delay: 2.3s;
+    opacity: 0;
+}
+header > section > ul:nth-child(3) {
+    animation-delay: 2.5s;
+}
+header > section > button:nth-child(4) {
+    animation-delay: 2.7s;
+    opacity: 0;
+}
 header > section > button {
     font-family: 'Poppins', sans-serif;
     background-color: rgba(26,26,26,255);
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 20px;
     padding: 10px;
     font-size: 17px;
     color: white;
+    font-weight: 500;
+    transition: color 0.4s ease-out, background-color 0.2s ease-out, border 0.4s ease-out;
+
+    animation-name: descerTopo;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+header > section > button:hover {
+    color: rgba(26,26,26,255);
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 main#part1 {
     background-color: none;
@@ -85,8 +155,15 @@ main#part1 >div> button {
     font-weight: 500;
     border: 2px solid blue;
     border-radius: 30px;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+button#Saiba:hover {
+color: rgb(0, 100, 207);
+cursor: pointer;
+background-color: rgba(26,26,26,255);
 }
 div#img {
+    opacity: 0;
     background-color: none;
     display: flex;
     flex-flow: row nowrap;
@@ -94,6 +171,14 @@ div#img {
     justify-content: space-between;
     background-color: none;
     background-color: none;
+
+    animation-name: ApareceFotos;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 div#img > img {
     width: 50%;
@@ -195,7 +280,8 @@ main#Depoi {
     background-color: none;
     width: 90%;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
+    margin-top: 50px;
 }
 div#DepFull {
     padding: 20px;
@@ -247,6 +333,8 @@ div#cor {
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
+    margin-right: 0px;
+    transform: translateX(0px);
 }
 div#cor > h1 {
     font-size: 40px;
@@ -286,7 +374,7 @@ div#Pronto {
     position: relative;
 
 }
-div#Pronto >button {
+div#Pronto > button {
     font-family: 'Poppins', sans-serif;
     padding: 15px;
     background-color: rgb(0, 100, 207);
@@ -295,6 +383,14 @@ div#Pronto >button {
     font-size: 20px;
     border-radius: 30px;
     width: 200px;
+    border: 1px solid rgb(255, 255, 255);;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out, border 0.3s ease;
+}
+div#Pronto > button:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: rgb(0, 56, 167);;
 }
 div#Pronto > img {
     position: absolute;
@@ -310,7 +406,7 @@ div#Redes > img {
 footer  {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     background-color: rgba(0, 0, 0, 0.423);
     width: 100%;
@@ -332,4 +428,19 @@ div#Redes {
     background-color: rgba(0, 0, 255, 0);
     width: 50%;
     margin-left: 20px;
+}
+div#partDiret {
+    width: 505px;
+    height: 250px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    text-align: justify;
+    margin-right: 40px;
+    background-color: rgba(0, 255, 255, 0);
+}
+div#partDiret > p {
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
 }
