@@ -1,6 +1,9 @@
 var animado = document.getElementById("cor");
 var arrastaPEsq = document.getElementById("Pronto");
 
+if (!window.matchMedia("(max-width: 768px)").matches) {
+
+
 window.addEventListener('scroll', () => {
     
     var ScrolouTopo = window.scrollY;
@@ -16,4 +19,6 @@ window.addEventListener('scroll', () => {
 
    // animado.style.backgroundColor = 'green';
    //window.alert(parseInt(alem));
+
 })
+}
