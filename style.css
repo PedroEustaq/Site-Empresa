@@ -14,18 +14,12 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
+div#Lado1 {
+    width: 50%;
+}
 div#Lado1 > h1 > span{
     color: rgb(32, 140, 255);
     text-shadow: 0px 0px 5px rgb(0, 103, 213);
-}
-div#Lado1 > h1 {
-    animation-name: paraOLado;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
 }
 div#Lado1 > h2 {
     opacity: 0;
@@ -83,6 +77,8 @@ header > section > ul {
   animation-iteration-count: 1;
   animation-direction: alternate;
   animation-fill-mode: forwards;
+  margin-left: 00px;
+  margin-right: 10px;
 }
 header > section > ul:hover {
     cursor: pointer;
@@ -134,11 +130,18 @@ main#part1 {
     align-items: center;
 }
 main#part1 >div > h1 {
-    font-size: 70px;
+    font-size: 5vw;
     background-color: none;
     width: 80%;
     margin-left: 0px;
     line-height: 1.1;
+    animation-name: paraOLado;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
 }
 main#part1 >div> h2 {
     margin-top: 20px;
@@ -167,7 +170,7 @@ div#img {
     background-color: none;
     display: flex;
     flex-flow: row nowrap;
-    width: 1000px;
+    width: 50%;
     justify-content: space-between;
     background-color: none;
     background-color: none;
@@ -216,9 +219,12 @@ main#SobNOS > div > h2 {
     width: 50%;
     text-align: center;
 }
+section#Aplica > section {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 section#DesvSoft {
-    width: 250px;
-    height: 300px;
+    width: 20%;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid white;
@@ -228,10 +234,10 @@ section#DesvSoft > h1 {
     margin-bottom: 10px;
     padding-bottom: 10px;
     text-align: center;
+    font-size: 1.5vw;
 }
 section#DesvSoftB {
-    width: 250px;
-    height: 300px;
+    width: 20%;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid rgb(0, 56, 167);
@@ -241,10 +247,10 @@ section#DesvSoftB > h1 {
     margin-bottom: 10px;
     padding-bottom: 10px;
     text-align: center;
+    font-size: 1.5vw;
 }
 section#DesvSoftC {
-    width: 250px;
-    height: 300px;
+    width: 20%;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid rgb(210, 144, 0);
@@ -254,10 +260,10 @@ section#DesvSoftC > h1 {
     margin-bottom: 10px;
     padding-bottom: 10px;
     text-align: center;
+    font-size: 1.5vw;
 }
 section#DesvSoftD {
-    width: 250px;
-    height: 300px;
+    width: 20%;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid rgb(0, 175, 177);
@@ -267,12 +273,17 @@ section#DesvSoftD > h1 {
     margin-bottom: 10px;
     padding-bottom: 10px;
     text-align: center;
+    font-size: 1.5vw;
 }
 section#Aplica {
-    background-color: none;
+    background-color: rgba(0, 0, 255, 0);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 20px;
+    width: 100%;
+}
+section#Aplica > section > p {
+    font-size: 1.15vw;
 }
 main#Depoi {
     display: flex;
@@ -299,10 +310,13 @@ div#Pessoa {
     padding-bottom: 10px;
 }
 div#Pessoa > h2 {
+    width: 80%;
     font-size: 23px;
+    font-size: 1.5vw;
 }
 div#Pessoa > img {
-    width: 12%;
+    width: 15%;
+    max-width: 55px;
 }
 div#DepFull > p {
     font-size: 23px;
@@ -326,24 +340,26 @@ main#ProntoPara {
 }
 div#cor {
     background-color: rgb(0, 100, 207);
-    width: 55%;
-    height: 100%;
-    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+    height: 90%;
+    border-radius: 10px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    margin-right: 0px;
+    margin-right: 20px;  
     transform: translateX(0px);
 }
 div#cor > h1 {
-    font-size: 40px;
+    font-size: 2.6vw;
     color: rgba(255, 255, 255, 0.66);
     font-weight: 400;
+    margin-bottom: 40px;
 }
 div#cor > h1 > span {
     color: rgb(255, 255, 255);
-    font-size: 70px;
+    font-size: 5.5vw;
     font-weight: 700;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.541);
 }

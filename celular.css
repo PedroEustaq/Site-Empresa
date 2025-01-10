@@ -1,0 +1,140 @@
+@media (max-width:900px) {
+    div#Lado1 > h1 {  
+    font-size: 1px;
+    }
+    
+}
+@media (max-width: 768px) {
+    body {
+        background-color: none;
+        width: 100%;
+    }
+    main#SobNOS {
+        height: auto;
+    }
+    main#SobNOS > div > h2 {
+        width: 100%;
+    }
+    section#Aplica {
+        height: 850px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    section#Aplica > section {
+        width: 90%;
+        margin-top: 10px;
+    }
+    section#Aplica > section > h1 {
+        font-size: 5vw;
+    }
+    section#Aplica > section > p {
+        font-size: 3.3vw;
+    }
+    main#Depoi {
+       flex-flow: column-reverse nowrap;
+    }
+    div#imgDepo {
+        width: 60%;
+    }
+    div#DepFull {
+        width: 90%;
+    }
+    div#Pessoa > h2 {
+        font-size: 3.3vw;
+    }
+    main#part1 {
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+    div#Lado1 {
+        width: 90%;
+    }
+    main#part1 >div > h1 {
+        font-size: 13vw;
+        margin-top: 30px;
+    }
+    main#part1 >div > h2 {
+        margin-top:  0px;
+    }
+    div#img {
+        width: 90%;
+    }
+    button#Saiba {
+        margin-bottom: 20px;
+    }
+    main#ProntoPara {
+        flex-flow: column nowrap;
+        height: auto;
+    }
+    div#cor {
+      width: 90%;
+        height: 60%;
+        padding: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    div#cor > h1 {
+        margin-bottom: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+    div#cor > h1 > span  {
+        font-size: 25px;
+    }
+    section#PulandoHom {
+        height: 100px;
+        width: 200px;
+        border-radius: 15px;
+    }
+    section#PulandoHom > img {
+        width: 200px;
+        margin-bottom: 55px;
+    }
+    div#Pronto {
+        width: 80%;
+        margin-top: 20px;
+        height: 200px;
+    }
+    div#Pronto > h1 {
+        font-size: 23px;
+    }
+    footer {
+        flex-flow: column wrap;
+    }
+    footer > div#partEsquerd {
+        margin-left: 0px;
+        width: 100%;
+        display: none;
+    }
+    footer > div#partDiret {
+        margin-right: 0px;
+        width: 100%;
+    }
+    div#partDiret > p {
+
+    }
+    b {
+        width: 25%;
+    }
+    header {
+        width: 100%;
+        flex-flow: column wrap;
+    }
+    div#Logo {
+        width: 60%;
+    }
+    header > section {
+        width: 100%;
+        justify-content: space-around;
+    }
+    header > section > ul {
+        margin-right: 0px;
+        text-align: center;
+        font-size: 12px;
+    }
+    header > section > button {
+        font-size: 12px;
+    }
+}
