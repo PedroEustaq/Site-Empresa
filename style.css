@@ -248,7 +248,7 @@ section#DesvSoft > h1 {
     margin-bottom: 10px;
     padding-bottom: 10px;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 23px;
 }
 section#DesvSoftB {
     width: 20%;
@@ -261,7 +261,7 @@ section#DesvSoftB > h1 {
     margin-bottom: 10px;
     padding-bottom: 10px;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 23px;
 }
 section#DesvSoftC {
     width: 20%;
@@ -274,7 +274,7 @@ section#DesvSoftC > h1 {
     margin-bottom: 10px;
     padding-bottom: 10px;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 23px;
 }
 section#DesvSoftD {
     width: 20%;
@@ -287,7 +287,7 @@ section#DesvSoftD > h1 {
     margin-bottom: 10px;
     padding-bottom: 10px;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 23px;
 }
 section#Aplica {
     background-color: rgba(0, 0, 255, 0);
@@ -297,7 +297,7 @@ section#Aplica {
     width: 100%;
 }
 section#Aplica > section > p {
-    font-size: 1.15vw;
+    font-size: 17px;
 }
 main#Depoi {
     display: flex;
@@ -326,7 +326,6 @@ div#Pessoa {
 div#Pessoa > h2 {
     width: 80%;
     font-size: 23px;
-    font-size: 1.5vw;
 }
 div#Pessoa > img {
     width: 15%;
@@ -366,14 +365,14 @@ div#cor {
     transform: translateX(0px);
 }
 div#cor > h1 {
-    font-size: 2.6vw;
+    font-size: 40px;
     color: rgba(255, 255, 255, 0.66);
     font-weight: 400;
     margin-bottom: 40px;
 }
 div#cor > h1 > span {
     color: rgb(255, 255, 255);
-    font-size: 5.5vw;
+    font-size: 60px;
     font-weight: 700;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.541);
 }
