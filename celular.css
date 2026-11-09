@@ -1,18 +1,18 @@
-@media (max-width:900px) {
+@media (max-width: 900px) {
     div#Lado1 > h1 {  
-    font-size: 1px;
+        font-size: 1px;
     }
-    
 }
+
 @media (max-width: 768px) {
     body {
         background-color: none;
         width: 100%;
     }
-    main#SobNOS {
+    section#SobNOS {
         height: auto;
     }
-    main#SobNOS > div > h2 {
+    section#SobNOS > div > h2 {
         width: 100%;
     }
     section#Aplica {
@@ -32,8 +32,8 @@
     section#Aplica > section > p {
         font-size: 3.3vw;
     }
-    main#Depoi {
-       flex-flow: column-reverse nowrap;
+    section#Depoi {
+        flex-flow: column-reverse nowrap;
     }
     div#imgDepo {
         width: 60%;
@@ -44,18 +44,18 @@
     div#Pessoa > h2 {
         font-size: 3.3vw;
     }
-    main#part1 {
+    section#part1 {
         flex-flow: column nowrap;
         width: 100%;
     }
     div#Lado1 {
         width: 90%;
     }
-    main#part1 >div > h1 {
+    section#part1 >div > h1 {
         font-size: 13vw;
         margin-top: 30px;
     }
-    main#part1 >div > h2 {
+    section#part1 >div > h2 {
         margin-top:  0px;
     }
     div#img {
@@ -64,12 +64,12 @@
     button#Saiba {
         margin-bottom: 20px;
     }
-    main#ProntoPara {
+    section#ProntoPara {
         flex-flow: column nowrap;
         height: auto;
     }
     div#cor {
-      width: 90%;
+        width: 90%;
         height: 60%;
         padding: 10px;
         border-bottom-left-radius: 0px;
@@ -112,29 +112,38 @@
         margin-right: 0px;
         width: 100%;
     }
-    div#partDiret > p {
-
-    }
     b {
         width: 25%;
     }
     header {
         width: 100%;
         flex-flow: column wrap;
+        align-items: center;
     }
     div#Logo {
         width: 60%;
     }
-    header > section {
+    
+    /* --- INÍCIO DAS ALTERAÇÕES MOBILE DO MENU --- */
+    header > nav {
+        width: 100%;
+        flex-flow: column wrap;
+        gap: 15px; 
+        margin-top: 15px;
+    }
+    header > nav > ul {
         width: 100%;
         justify-content: space-around;
     }
-    header > section > ul {
+    header > nav > ul > li {
         margin-right: 0px;
         text-align: center;
-        font-size: 12px;
     }
-    header > section > button {
-        font-size: 12px;
+    header > nav > ul > li > a {
+        font-size: 14px; 
     }
+    header > nav > button {
+        font-size: 14px;
+    }
+    /* --- FIM DAS ALTERAÇÕES MOBILE DO MENU --- */
 }

@@ -21,6 +21,7 @@ main#tudo {
     align-items: center;
     flex-flow: column nowrap;
     max-width: 2000px;
+    width: 100%;
 }
 
 div#Lado1 {
@@ -75,16 +76,26 @@ header {
     font-weight: 400;
     z-index: 99999;
 }
-header > section {
+
+/* --- INÍCIO DAS ALTERAÇÕES DO MENU --- */
+header > nav {
     display: flex;
     flex-flow: row nowrap;
     width: 50%;
-    background-color: none;
     justify-content: space-between;
     align-items: center;
-
 }
-header > section > ul {
+
+header > nav > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; /* Remove as bolinhas da lista */
+    width: 60%; 
+}
+
+header > nav > ul > li {
     opacity: 0;
     transition: color 0.2s ease-out;
     animation-name: descerTopo;
@@ -94,26 +105,37 @@ header > section > ul {
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;
-    margin-left: 00px;
+    margin-left: 0px;
     margin-right: 10px;
     will-change: transform, opacity;
 }
-header > section > ul:hover {
-    cursor: pointer;
-   color: rgb(37, 142, 255); 
+
+header > nav > ul > li > a {
+    color: white;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.2s ease-out;
 }
-header > section > ul:nth-child(2) {
+
+header > nav > ul > li:hover {
+    cursor: pointer;
+}
+
+header > nav > ul > li:hover > a {
+    color: rgb(37, 142, 255); 
+}
+
+header > nav > ul > li:nth-child(2) {
     animation-delay: 2.3s;
     opacity: 0;
 }
-header > section > ul:nth-child(3) {
+
+header > nav > ul > li:nth-child(3) {
     animation-delay: 2.5s;
 }
-header > section > button:nth-child(4) {
-    animation-delay: 2.7s;
-    opacity: 0;
-}
-header > section > button {
+
+header > nav > button {
     font-family: 'Poppins', sans-serif;
     background-color: rgba(26,26,26,255);
     border: 2px solid white;
@@ -122,22 +144,27 @@ header > section > button {
     font-size: 17px;
     color: white;
     font-weight: 500;
+    opacity: 0;
     transition: color 0.4s ease-out, background-color 0.2s ease-out, border 0.4s ease-out;
     animation-name: descerTopo;
     animation-duration: 2s;
     animation-timing-function: ease;
+    animation-delay: 2.7s;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;
     will-change: transform, opacity;
 }
-header > section > button:hover {
+
+header > nav > button:hover {
     color: rgba(26,26,26,255);
     cursor: pointer;
     border: 2px solid rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
 }
-main#part1 {
+/* --- FIM DAS ALTERAÇÕES DO MENU --- */
+
+section#part1 {
     background-color: none;
     width: 80%;
     background-color: none;
@@ -148,7 +175,7 @@ main#part1 {
     flex-flow: row nowrap;
     align-items: center;
 }
-main#part1 >div > h1 {
+section#part1 >div > h1 {
     font-size: 5em;
     background-color: none;
     width: 80%;
@@ -162,11 +189,11 @@ main#part1 >div > h1 {
     animation-direction: alternate;
     animation-fill-mode: forwards;
 }
-main#part1 >div> h2 {
+section#part1 >div> h2 {
     margin-top: 20px;
     font-weight: 300;
 }
-main#part1 >div> button {
+section#part1 >div> button {
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
     width: 200px;
@@ -180,9 +207,9 @@ main#part1 >div> button {
     transition: color 0.3s ease-out, background-color 0.3s ease-out;
 }
 button#Saiba:hover {
-color: rgb(0, 100, 207);
-cursor: pointer;
-background-color: rgba(26,26,26,255);
+    color: rgb(0, 100, 207);
+    cursor: pointer;
+    background-color: rgba(26,26,26,255);
 }
 div#img {
     opacity: 0;
@@ -218,21 +245,21 @@ div#img > div > img {
     margin-top: 10px;
     max-height: 200px;
 }
-main#SobNOS {
+section#SobNOS {
     width: 90%;
     height: 700px;
     background-color: none;
 }
-main#SobNOS > div {
+section#SobNOS > div {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
-main#SobNOS > div > h1 {
+section#SobNOS > div > h1 {
     font-size: 50px;
 }
-main#SobNOS > div > h2 {
+section#SobNOS > div > h2 {
     font-weight: 300;
     background-color: none;
     width: 50%;
@@ -304,7 +331,7 @@ section#Aplica {
 section#Aplica > section > p {
     font-size: 17px;
 }
-main#Depoi {
+section#Depoi {
     display: flex;
     justify-content: space-around;
     background-color: none;
@@ -348,7 +375,7 @@ div#imgDepo {
 div#imgDepo > img {
     width: 100%;
 }
-main#ProntoPara {
+section#ProntoPara {
     margin-top: 40px;
     display: flex;
     width: 100%;
