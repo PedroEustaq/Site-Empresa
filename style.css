@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: 0px;
+    box-sizing: border-box;
 }
 body {
     width: 100vw;
@@ -30,31 +30,36 @@ div#Lado1 > h1 > span{
     color: rgb(32, 140, 255);
     text-shadow: 0px 0px 5px rgb(0, 103, 213);
 }
+div#Lado1 > h1 {
+    will-change: transform, opacity;
+}
 div#Lado1 > h2 {
     opacity: 0;
     animation-name: ApareceFotos;
-  animation-duration: 0.6s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 3s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  font-size: 1.5em;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    font-size: 1.5em;
+    will-change: transform, opacity;
 }
 div#Lado1 > button {
     opacity: 0;
     animation-name: ApareceFotos;
-  animation-duration: 0.6s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 3s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    will-change: transform, opacity;
 }
-div#Logo > img{
+.Logo > img{
     width: 80px;
 }
-div#Logo {
+.Logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,14 +88,15 @@ header > section > ul {
     opacity: 0;
     transition: color 0.2s ease-out;
     animation-name: descerTopo;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: 2s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  margin-left: 00px;
-  margin-right: 10px;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    margin-left: 00px;
+    margin-right: 10px;
+    will-change: transform, opacity;
 }
 header > section > ul:hover {
     cursor: pointer;
@@ -117,13 +123,13 @@ header > section > button {
     color: white;
     font-weight: 500;
     transition: color 0.4s ease-out, background-color 0.2s ease-out, border 0.4s ease-out;
-
     animation-name: descerTopo;
     animation-duration: 2s;
     animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards;
+    will-change: transform, opacity;
 }
 header > section > button:hover {
     color: rgba(26,26,26,255);
@@ -185,15 +191,14 @@ div#img {
     flex-flow: row nowrap;
     width: 50%;
     justify-content: center;
-
-
     animation-name: ApareceFotos;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 1.5s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    will-change: transform, opacity;
 }
 div#img > img {
     height: 400px;
@@ -401,7 +406,7 @@ div#Pronto {
     justify-content: space-between;
     overflow: hidden;
     position: relative;
-
+    transform: translateX(0px);
 }
 div#Pronto > button {
     font-family: 'Poppins', sans-serif;
@@ -472,4 +477,44 @@ div#partDiret > p {
     font-weight: 200;
     display: flex;
     justify-content: space-between;
+}
+
+@keyframes descerTopo {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes paraOLado {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) rotate3d(0, 1, 0, 60deg) translateX(-400px);
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate3d(1, 1, 0, -30deg) translateX(0px) translateY(-20px);
+    }
+}
+@keyframes ApareceFotos {
+    0%{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
